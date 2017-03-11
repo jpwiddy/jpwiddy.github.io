@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Jake Widmer</title>
+    <base href="/">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <script>
+        // See http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/
+        (function () {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+            }
+        })();
+    </script>
+
+<link href="styles.1873ed4e1f02e77a37be.bundle.css" rel="stylesheet"/></head>
+
+<body style="background-color: #E5E8EB;">
+    <app-root></app-root>
+<script type="text/javascript" src="inline.b0812d059299a2a38126.bundle.js"></script><script type="text/javascript" src="polyfills.1286a0090551c448c6c4.bundle.js"></script><script type="text/javascript" src="main.bae6ba6f3937cd28b102.bundle.js"></script></body>
+
+</html>
